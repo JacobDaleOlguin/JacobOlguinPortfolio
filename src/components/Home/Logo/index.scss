@@ -1,0 +1,42 @@
+@keyframes dissolveIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 609px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    left: auto;
+    margin: auto;
+    opacity: 1;
+
+    img {
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        transform: rotateZ(15deg) !important;
+        z-index: 0;
+        image-rendering: smooth;
+        filter: blur(4px);
+    }
+    .solid-logo {
+        opacity: 0;
+        animation: 4s dissolveIn 7.5s forwards !important;
+    }
+
+    .outline-logo {
+        animation: dissolveIn 5s forwards !important;
+        opacity: 0;
+    }
+}
