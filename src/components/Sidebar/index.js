@@ -9,7 +9,10 @@ const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LogoJ} alt="logo" />
-      <span>Jacob Olguin</span>
+      <span>Jacob</span>
+      <br></br>
+      <br></br>
+      <span>Olguin</span>
     </Link>
     <nav>
       <NavLink

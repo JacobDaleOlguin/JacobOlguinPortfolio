@@ -6,6 +6,7 @@
   top: 0;
   z-index: 3;
   min-height: 500px;
+  min-width: 60px;
 
   span{
     font-family: 'La belle Aurore';
@@ -14,6 +15,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
+    font-size: 25px;
 
   }
 
@@ -44,13 +46,14 @@ nav {
   width: 100%;
 
   a {
-    font-size: 22px;
+    font-size: 30px;
     color: #4d4d4e;
     display: block;
     line-height: 51px;
     height: 51px;
     position: relative;
     text-decoration: none;
+    padding-top: 25px;
 
     i {
       transition: all 0.3s ease-out;
@@ -117,7 +120,7 @@ nav {
       a {
         padding: 7px 0;
         display: block;
-        font-size: 15px;
+        font-size: 30px;
         line-height: 16px;
 
         &:hover svg {
