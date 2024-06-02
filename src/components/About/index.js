@@ -32,23 +32,23 @@ const About = () => {
               idx={15}
             />
           </h1>
+          <h2>Professional Experience:</h2>
           <p>
-            <h2>Professional Experience:</h2>
             As an professional full-stack developer since December 2023, I've
             honed my skills in both frontend and backend development, utilizing
             frameworks like React and using languages including Typesript,
             Python, C and a bunuch more you can see to the right.
           </p>
+          <h2>Passion for Learning:</h2>
           <p>
-            <h2>Passion for Learning:</h2>
             Driven by a deep curiosity for mathematics and computer science, I
             am committed to continuous learning and mastering new technologies.
             My drive in tech is from the joy I from learning and understanding
             the underlying principles of programming and its practical
             applications.
           </p>
+          <h2>Personal Interests:</h2>
           <p>
-            <h2>Personal Interests:</h2>
             Outside of coding, my passions include rock climbing and kayaking,
             which keep me adventurous and active, alongside a keen interest in
             mathematics that satisfies my love for problem-solving and

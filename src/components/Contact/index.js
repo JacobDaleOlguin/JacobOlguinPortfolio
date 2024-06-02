@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { Helmet } from 'react-helmet'
 
 const Contact = () => {
   let text = 'Contact Me'
@@ -41,6 +42,13 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact Jacob - Frontend Developer</title>
+        <meta
+          name="description"
+          content="Reach out to Jacob Olguin for project inquiries, collaborations, or hiring opportunities in frontend development, UI development or UX developent."
+        />
+      </Helmet>
       <div className="container contact-page">
         <div className="text-zone">
           <div>
