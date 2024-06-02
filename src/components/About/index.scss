@@ -1,8 +1,8 @@
 .stage-cube-cont {
     width: 50%;
     height: 100%;
+    padding-top: 13%;
     top: 0;
-    padding-top: 18%;
     margin-left: 0;
     position: absolute;
     right: 0;
@@ -31,6 +31,7 @@
         align-items: center;
         box-shadow: 0 0 20px 0px rgb(255, 255, 255);
     }
+
 
     .face1 {
         transform:  translateZ(150px);

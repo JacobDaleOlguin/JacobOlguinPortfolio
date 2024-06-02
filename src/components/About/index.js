@@ -58,27 +58,28 @@ const About = () => {
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
-            <div className="face1">
+            <div className="face1 face">
               <FontAwesomeIcon icon={faAngular} color="#DD0031" />
             </div>
-            <div className="face2">
+            <div className="face2 face">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
-            <div className="face3">
+            <div className="face3 face">
               <FontAwesomeIcon icon={faCss3} color="#28A4d9" />
             </div>
-            <div className="face4">
+            <div className="face4 face">
               <FontAwesomeIcon icon={faReact} color="#5DE4F4" />
             </div>
-            <div className="face5">
+            <div className="face5 face">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
-            <div className="face6">
+            <div className="face6 face">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4d28" />
             </div>
           </div>
         </div>
       </div>
+
       <Loader type="pacman" />
     </>
   )
