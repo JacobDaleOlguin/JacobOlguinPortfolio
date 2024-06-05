@@ -1,13 +1,56 @@
-@keyframes dissolveIn {
+@media (min-width: 998px) {
+  @keyframes dissolveIn {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
-}
+  }
 
-.logo-container {
+  .logo-container {
+    z-index: 0;
+    width: 30%;
+    height: 99%;
+    max-height: 700px;
+    max-width: 600px;
+    position: absolute;
+    right: 15%;
+    bottom: 60%;
+    opacity: 1;
+    align-content: center;
+    justify-content: center;
+
+    img {
+      position: inherit;
+      width: 100%;
+      transform: rotateZ(15deg) !important;
+      z-index: 0;
+      image-rendering: smooth;
+      filter: blur(4px);
+    }
+    .solid-logo {
+      opacity: 0;
+      animation: 3s dissolveIn 7.5s forwards !important;
+    }
+
+    .outline-logo {
+      animation: dissolveIn 2s forwards !important;
+      opacity: 0;
+    }
+  }
+}
+@media (max-width: 997px) {
+  @keyframes dissolveIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .logo-container {
     z-index: 0;
     width: 400px;
     height: 609px;
@@ -19,24 +62,21 @@
     opacity: 1;
 
     img {
-        position: absolute;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        transform: rotateZ(15deg) !important;
-        z-index: 0;
-        image-rendering: smooth;
-        filter: blur(4px);
+      position: absolute;
+      top: 0;
+      right: 0%;
+      width: 80vw;
+      transform: rotateZ(15deg) translateY(2rem) translateX(2.8rem) !important;
+      z-index: 0;
+      filter: blur(4px);
     }
     .solid-logo {
-        opacity: 0;
-        animation: 3s dissolveIn 7.5s forwards !important;
+      display: none;
     }
 
     .outline-logo {
-        animation: dissolveIn 2s forwards !important;
-        opacity: 0;
+      animation: dissolveIn 2s forwards !important;
+      opacity: 0;
     }
+  }
 }

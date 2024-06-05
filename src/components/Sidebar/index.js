@@ -9,10 +9,7 @@ const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LogoJ} alt="logo" />
-      <span>Jacob</span>
-      <br></br>
-      <br></br>
-      <span>Olguin</span>
+      <span>Jacob Olguin</span>
     </Link>
     <nav>
       <NavLink
@@ -47,7 +44,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://www.linkedin.com/in/jacob-olguin-a29706137/"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faLinkedin} color="#0072b1" />
         </a>
       </li>
       <li>
@@ -56,7 +53,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://github.com/JacobDaleOlguin"
         >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faGithub} color="#ddd" />
         </a>
       </li>
     </ul>

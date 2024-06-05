@@ -51,7 +51,7 @@ const Contact = () => {
       </Helmet>
       <div className="container contact-page">
         <div className="text-zone">
-          <div>
+          <div className="sub-text">
             <h1>
               <AnimatedLetters
                 strArray={title}
@@ -59,14 +59,13 @@ const Contact = () => {
                 letterClass={letterClass}
               />
             </h1>
-
+            <h2>I'm interested in solving problems</h2>
             <p>
-              <h2>I'm interested in solving problems</h2> My curiosity drives me
-              to explore new opportunities where I can apply my skills to solve
-              unique challenges. I am eager to engage with both large-scale and
-              smaller projects. If you or your team has an exciting opportunity
-              where I can contribute, learn, and apply my expertise, please feel
-              free to reach out.
+              My curiosity drives me to explore new opportunities where I can
+              apply my skills to solve unique challenges. I am eager to engage
+              with both large-scale and smaller projects. If you or your team
+              has an exciting opportunity where I can contribute, learn, and
+              apply my expertise, please feel free to reach out.
             </p>
           </div>
           <div className="contact-form">
@@ -115,7 +114,7 @@ const Contact = () => {
           <span>JacobDaleOlguin@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[28.13492, -82.37079]} zoom={13}>
+          <MapContainer center={[28.13492, -82.37079]} zoom={8}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[28.13592, -82.37259]}>
               <Popup>Jacob lives here, come over for a cup of tea :)</Popup>
