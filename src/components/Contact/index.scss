@@ -17,8 +17,10 @@
         display: block;
         position: relative;
         opacity: 0;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+        -webkit-animation: fadeInUp 2s 2s;
+                animation: fadeInUp 2s 2s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
         clear: both;
       }
 
@@ -47,6 +49,8 @@
       font-size: 16px;
       color: #fff;
       padding: 0 20px;
+      -webkit-transition: 5000s;
+      -o-transition: 5000s;
       transition: 5000s;
     }
 
@@ -59,7 +63,8 @@
       color: #fff;
       padding: 20px;
       min-height: 150px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       resize: none;
     }
 
@@ -89,8 +94,10 @@
     font-size: 17px;
     font-weight: 300;
     opacity: 0;
-    animation: fadeIn 1s 2.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation: fadeIn 1s 2.5s;
+            animation: fadeIn 1s 2.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     
 
     span {
@@ -113,16 +120,23 @@
     height: 100%;
     position: relative;
     opacity: 0;
-    animation: backInRight 1s 2s;
-    animation-fill-mode: forwards;
+    -webkit-animation: backInRight 1s 2s;
+            animation: backInRight 1s 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 @media (max-width: 997px) {
   .contact-form {
     width: 100%;
     margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     ul {
       padding: 0;
@@ -139,8 +153,10 @@
         display: block;
         position: relative;
         opacity: 0;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+        -webkit-animation: fadeInUp 2s 2s;
+                animation: fadeInUp 2s 2s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
         clear: both;
       }
 
@@ -169,6 +185,8 @@
       font-size: 16px;
       color: #fff;
       padding: 0 20px;
+      -webkit-transition: 5000s;
+      -o-transition: 5000s;
       transition: 5000s;
     }
 
@@ -181,7 +199,8 @@
       color: #fff;
       padding: 20px;
       min-height: 150px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       resize: none;
     }
 
@@ -213,8 +232,10 @@
     font-size: 17px;
     font-weight: 300;
     opacity: 0;
-    animation: fadeIn 1s 2.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation: fadeIn 1s 2.5s;
+            animation: fadeIn 1s 2.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     display: none;
 
     span {
@@ -238,7 +259,9 @@
     height: 100%;
     position: relative;
     opacity: 0;
-    animation: backInRight 1s 2s;
-    animation-fill-mode: forwards;
+    -webkit-animation: backInRight 1s 2s;
+            animation: backInRight 1s 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
