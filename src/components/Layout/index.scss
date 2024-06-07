@@ -82,7 +82,6 @@
         &::before {
           content: '<h1>';
           font-family: 'La Belle Aurore';
-          font-style: 10px;
           font-size: 25px;
           position: absolute;
           margin-top: -20px;
@@ -94,7 +93,6 @@
         &::after {
           content: '</h1>';
           font-family: 'La Belle Aurore';
-          font-style: 10px;
           font-size: 25px;
           position: absolute;
           line-height: 10px;
@@ -116,7 +114,6 @@
       }
 
       p {
-        font-style: 13px;
         color: white;
         font-family: sans-serif;
         font-weight: 300;
@@ -261,15 +258,17 @@
 
   .about-page {
     .text-zone {
-      position: absolute;
+      display: flex;
+      flex-direction: column;
       width: 95%;
       max-width: 400px !important;
       height: 100%;
       vertical-align: middle;
       display: table-cell;
       max-height: 90%;
-      top: 0px;
-      left: 2.5%;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
 
 
       h1 {
