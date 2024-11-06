@@ -205,13 +205,13 @@
       
           }
       
-          .face1 {
+          .face1 { //angular
             -webkit-transform: translateZ(50px);
                     transform: translateZ(50px);
                 
           }
       
-          .face2 {
+          .face2 { // html 5
             -webkit-transform: rotateY(90deg) translateZ(50px);
                     transform: rotateY(90deg) translateZ(50px);
                     
@@ -219,7 +219,7 @@
       
           .face3 {
             -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
-                    transform: rotateY(90deg) translateZ(50px);
+                    transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
                     
           }
       
