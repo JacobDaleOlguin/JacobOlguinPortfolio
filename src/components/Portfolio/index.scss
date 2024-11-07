@@ -1,4 +1,7 @@
     .portfolio-page {
+
+        height: 110%;
+        top: -5%;
         display: flex;
         
         align-items: center;
@@ -6,25 +9,102 @@
 
         .port-grid {
             width: 75%;
-            height: 98%;
+            height: 75%;
             position: relative;
-            left: 35px;
-            background-color: aliceblue;
+            left: 0;
             display: grid;
+            background: #181818b4;
             justify-content: center;
+            overflow-y: auto;
+                    &::-webkit-scrollbar {
+                        background-color: #000;
+                        width: 0px;
+                        border-radius: 10px;
+                        
+                    }
+
+            //temp font adjustments
+            font-size: 99px;
+            border-radius: 25px;
             
-            grid-template-columns: repeat(auto-fit, minmax(500px, auto));
 
-
+            
+            grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+            grid-template-rows: masonry;
+            
+            
 
             .port-box {
-                width: 75%;
-                min-width: auto;
-                max-width: auto;
-                height: 70%;
-                background-color: rgb(0, 146, 44);               
+                width: 90%;
+                height: 92%;
+                background-color: grey;               
                 align-self: center;
                 justify-self: center;
+                transition: .25s ease-in-out;
+                border-style: solid;
+                border-radius: 5%;
+                display: grid;
+                grid-template-rows: 30% 70%;
+
+                &:hover{
+                    border-style: solid;                  
+                    border-color: gold;
+                    transform: scale(1.05);
+                }
+            }
+            .port-box-top {
+                margin: 2.5%;
+                font-size: 15%;
+                overflow-y: auto;
+                font-family: sans-serif;
+                color: #181818;
+
+                    &::-webkit-scrollbar {
+                        background-color: #000;
+                        width: 12px;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        border-radius: 10px;
+                        box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #0b3b55), color-stop(1, gold));
+                        border-radius: 10px;
+                    }
+
+            }
+            .port-box-bottom {
+                width: 100%;
+                height: 100%;
+                background-color: #39749c; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                border-radius: 5%;
+                transition: opacity .25s ease-in-out;
+
+                &::before {
+                    content: 'Visit Site';
+                    font-family: 'La belle Aurore';
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    transition: opacity .25s ease-in-out;
+                    opacity: 0; 
+                    pointer-events: none;
+                }
+
+                &:hover::before {
+                            opacity: 1;
+
+                        }
+
             }
         }
     }
