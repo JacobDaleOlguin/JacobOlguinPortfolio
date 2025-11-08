@@ -6,7 +6,7 @@ import {
   faEnvelope,
   faHome,
   faUser,
-  faSuitcase,
+  /*faSuitcase,*/
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
