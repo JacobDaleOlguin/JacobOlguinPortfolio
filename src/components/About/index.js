@@ -32,28 +32,43 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <h2>Professional Experience</h2>
-          <p>
-            As an professional full-stack developer since December 2023, I've
-            honed my skills in both frontend and backend development, utilizing
-            frameworks like React and using languages including Javascript,
-            Typesript, HTML, CSS, Python, C, SQL, and more!
-          </p>
-          <h2>Passion for Learning</h2>
-          <p>
-            Driven by a deep curiosity for mathematics and computer science, I
-            am committed to continuous learning and mastering new technologies.
-            My drive in tech is from the joy I from learning and understanding
-            the underlying principles of programming and its practical
-            applications.
-          </p>
-          <h2>Personal Interests</h2>
-          <p>
-            Outside of coding, my passions include rock climbing and kayaking,
-            which keep me adventurous and active, alongside a keen interest in
-            mathematics that satisfies my love for problem-solving and
-            analytical thinking.
-          </p>
+             <h2>Professional Experience</h2>
+            <p>
+              I'm a Data Science student at Arizona State University with hands-on
+              full-stack experience from a year-long internship at{" "}
+              <a
+                href="https://bulkitrade.com"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: 'inherit', textDecoration: 'underline' }}
+              >
+                Bulkitrade.com
+              </a>
+              . There, I helped modernize frontend components, streamline backend
+              workflows, and improve reliability using React, JavaScript, TypeScript,
+              Python, and SQL.
+            </p>
+
+            <h2>Education & Certifications</h2>
+            <p>
+              Pursuing a Bachelor's in Data Science at ASU with a focus on applied
+              mathematics, programming, and analytics. I hold{" "}
+              <strong>CompTIA Security+</strong> and I'm actively preparing for the{" "}
+              <strong>CompTIA A+</strong>.
+            </p>
+
+            <h2>Technical Skills</h2>
+            <p>
+              Python, C, JavaScript, TypeScript, HTML, CSS, SQL, React, Node.js, Git,
+              Linux • Building data-driven features that blend software engineering
+              and analytics.
+            </p>
+
+            <h2>Personal Interests</h2>
+            <p>
+              Rock climbing and kayaking; I enjoy projects where data, design, and
+              technology intersect.
+            </p>
         </div>
 
         <div className="stage-cube-cont">
